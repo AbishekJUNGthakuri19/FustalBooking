@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bookingpage.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar" class="scroll">
+        <!-- Navbar gets inserted from JS -->
+      </nav>
+    <div class="container">
+
+        <div class="city-name">
+            <div class="line"></div>
+            <h2>CHITWAN</h2>
+        </div>
+
+        <!-- Box contains fustal address call and BOOk now -->
+        <div class="fustal-box1">
+            <div class="box">
+                <div class="box-left">
+                    <img class="fustal-venuePic" src="../web-images/gautam chowk fustal.jpg">
+                    <div class="name-rating">
+                        <h3 class="venue-name">Chitwan futsal and sports zone</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fustal-location">MC9H+R7R, Gautam Chowk, Bharatpur 7</p>
+                    </div>
+                </div>
+
+                <div class="box-right">
+                    <button onclick="cancel1()" class="cancel-btn1"><i class="fa-solid fa-circle-xmark"></i>
+                        Cancel</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-diamond-turn-right"></i> Direction</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-phone"></i> Call now</button>
+                    </button>
+                    <button class="book-btn" onclick="booknow1()">Book Now</button>
+                </div>
+            </div>
+            <div class="date-booking1">
+                <p class="today1" onclick="bookingDay1()">Today</p>
+                <p class="tomorrow" onclick="bookingDay()">Tomorrow</p>
+                <p>7 August</p>
+                <p>8 August</p>
+                <p>9 August</p>
+                <p>10 August</p>
+                <p>11 August</p>
+            </div>
+            <div class="time1">
+                <a href="paymentpage.html">7am-8am</a>
+                <a href="#">8am-9am</a>
+                <a href="paymentpage.html">9am-10am</a>
+                <a href="paymentpage.html">10am-11am</a>
+                <a href="#">11am-12pm</a>
+                <a href="#">3pm-4pm</a>
+                <a href="paymentpage.html">4pm-5pm</a>
+                <a href="#">5pm-6pm</a>
+            </div>
+
+            <div class="booked-or-not1">
+                <div class="booked">
+                    <div class="circle"></div>
+                    <p>Booked</p>
+                </div>
+                <div class="not-booked">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fustal-box2">
+            <div class="box">
+                <div class="box-left">
+                    <img class="fustal-venuePic" src="../web-images/kshetrapur fustal.jpeg">
+
+                    <div class="name-rating">
+                        <h3 class="venue-name">Kshetrapur Fustal Arena</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fustal-location">MCWJ+VPR Road, Bharatpur 44200</p>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <button onclick="cancel2()" class="cancel-btn2"><i class="fa-solid fa-circle-xmark"></i>
+                        Cancel</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-diamond-turn-right"></i> Direction</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-phone"></i> Call now</button>
+                    <button class="book-btn" onclick="booknow2()">Book Now</button>
+                </div>
+            </div>
+            <div class="date-booking2">
+                <p class="today2" onclick="bookingDay2()">Today</p>
+                <p class="tomorrow" onclick="bookingDay()">Tomorrow</p>
+                <p>7 August</p>
+                <p>8 August</p>
+                <p>9 August</p>
+                <p>10 August</p>
+                <p>11 August</p>
+            </div>
+            <div class="time2">
+                <a href="#">7am-8am</a>
+                <a href="paymentpage.html">8am-9am</a>
+                <a href="#">9am-10am</a>
+                <a href="paymentPage.html">10am-11am</a>
+                <a href="paymentpage.html">11am-12pm</a>
+                <a href="#">3pm-4pm</a>
+                <a href="#">4pm-5pm</a>
+                <a href="paymentpage.html">5pm-6pm</a>
+            </div>
+
+
+            <div class="booked-or-not2">
+                <div class="booked">
+                    <div class="circle"></div>
+                    <p>Booked</p>
+                </div>
+                <div class="not-booked">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="fustal-box3">
+            <div class="box">
+
+                <div class="box-left">
+                    <img class="fustal-venuePic" src="../web-images/shardapur fustal.jpg">
+
+                    <div class="name-rating">
+                        <h3 class="venue-name">The Sharadpur futsal</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fustal-location">MC7J+FJ2, Bharatpur 44200</p>
+                    </div>
+                </div>
+
+                <div class="box-right">
+                    <button onclick="cancel3()" class="cancel-btn3"><i class="fa-solid fa-circle-xmark"></i>
+                        Cancel</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-diamond-turn-right"></i> Direction</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-phone"></i> Call now</button>
+                    <button class="book-btn" onclick="booknow3()">Book Now</button>
+                </div>
+            </div>
+
+            <div class="date-booking3">
+                <p class="today3" onclick="bookingDay3()">Today</p>
+                <p class="tomorrow" onclick="bookingDay()">Tomorrow</p>
+                <p>7 August</p>
+                <p>8 August</p>
+                <p>9 August</p>
+                <p>10 August</p>
+                <p>11 August</p>
+            </div>
+
+            <div class="time3">
+                <a href="paymentpage.html">7am-8am</a>
+                <a href="#">8am-9am</a>
+                <a href="#">9am-10am</a>
+                <a href="paymentpage.html">10am-11am</a>
+                <a href="paymentpage.html">11am-12pm</a>
+                <a href="paymentpage.html">3pm-4pm</a>
+                <a href="paymentpage.html">4pm-5pm</a>
+                <a href="#">5pm-6pm</a>
+            </div>
+
+            <div class="booked-or-not3">
+                <div class="booked">
+                    <div class="circle"></div>
+                    <p>Booked</p>
+                </div>
+                <div class="not-booked">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fustal-box4">
+            <div class="box">
+                <div class="box-left">
+                    <img class="fustal-venuePic" src="../web-images/parsa fustal.jpg">
+                    <div class="name-rating">
+                        <h3 class="venue-name">Parsa fustal</h3>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fustal-location">MC9H+R7R, Parsa Bazar, Chitwan</p>
+                    </div>
+                </div>
+
+                <div class="box-right">
+                    <button onclick="cancel4()" class="cancel-btn4"><i class="fa-solid fa-circle-xmark"></i>
+                        Cancel</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-diamond-turn-right"></i> Direction</button>
+                    <button class="dir-call-btn"><i class="fa-solid fa-phone"></i> Call now</button>
+                    <button class="book-btn" onclick="booknow4()">Book Now</button>
+                </div>
+            </div>
+            <div class="date-booking4">
+                <p class="today4" onclick="bookingDay4()">Today</p>
+                <p class="tomorrow" onclick="bookingDay()">Tomorrow</p>
+                <p>7 August</p>
+                <p>8 August</p>
+                <p>9 August</p>
+                <p>10 August</p>
+                <p>11 August</p>
+            </div>
+            <div class="time4">
+                <a href="paymentpage.html">7am-8am</a>
+                <a href="#">8am-9am</a>
+                <a href="paymentpage.html">9am-10am</a>
+                <a href="#">10am-11am</a>
+                <a href="paymentpage.html">11am-12pm</a>
+                <a href="#">3pm-4pm</a>
+                <a href="paymentpage.html">4pm-5pm</a>
+                <a href="#">5pm-6pm</a>
+            </div>
+
+            <div class="booked-or-not4">
+                <div class="booked">
+                    <div class="circle"></div>
+                    <p>Booked</p>
+                </div>
+                <div class="not-booked">
+                    <div class="circle"></div>
+                    <p>Available</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer-section">
+        <!-- Footer section will get filled by navbar.js -->
+    </div>
+    <script src="../js/navbar.js"></script>
+
+    <script>
+
+        // for Booking Date
+        let Bookingdate1 = document.querySelector(".date-booking1");
+        Bookingdate1.style.display = 'none';
+        let Bookingdate2 = document.querySelector(".date-booking2");
+        Bookingdate2.style.display = 'none';
+        let Bookingdate3 = document.querySelector(".date-booking3");
+        Bookingdate3.style.display = 'none';
+        let Bookingdate4 = document.querySelector(".date-booking4");
+        Bookingdate4.style.display = 'none';
+
+        // for cancel button
+    //   let cancel1 = document.querySelector(".cancel-btn1");
+    //   let cancel2 = document.querySelector(".cancel-btn2").style.display="none";
+    //   let cancel3 = document.querySelector(".cancel-btn3").style.display="none";
+    //   let cancel4 = document.querySelector(".cancel-btn4").style.display="none";
+
+        // for chitwan fusatl
+        let Time1 = document.querySelector(".time1");
+        let BookedOrnot1 = document.querySelector(".booked-or-not1");
+
+        // for Kshetrapur futsal
+        let Time2 = document.querySelector(".time2");
+        let BookedOrnot2 = document.querySelector(".booked-or-not2");
+
+        // for shadardpur fustal
+        let Time3 = document.querySelector(".time3");
+        let BookedOrnot3 = document.querySelector(".booked-or-not3");
+
+        // for parsa fustal
+        let Time4 = document.querySelector(".time4");
+        let BookedOrnot4 = document.querySelector(".booked-or-not4");
+
+        // for chitwan fustal
+        Time1.style.display = "none";
+        BookedOrnot1.style.display = "none";
+        function booknow1() {
+            Bookingdate1.style.display = "flex";
+
+            Bookingdate2.style.display = 'none';
+            Bookingdate3.style.display = 'none';
+            Bookingdate4.style.display = 'none';
+
+            Time2.style.display = "none";
+            BookedOrnot2.style.display = "none";
+            Time3.style.display = "none";
+            BookedOrnot3.style.display = "none";
+            Time4.style.display = "none";
+            BookedOrnot4.style.display = "none";
+
+            document.querySelector(".cancel-btn1").classList.add("cancel-btn-visible");
+            document.querySelector(".cancel-btn2").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn3").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn4").classList.remove("cancel-btn-visible");
+        
+        }
+        
+        function bookingDay1() {
+            Time1.style.display = "flex";
+            BookedOrnot1.style.display = "flex";
+            // document.querySelector(".today1").style.backgroundColor = "#4758d6";
+        }
+
+
+        // for Kshetrapur futsal
+        Time2.style.display = "none";
+        BookedOrnot2.style.display = "none";
+        function booknow2() {
+            Bookingdate2.style.display = "flex";
+            
+            Bookingdate1.style.display = 'none';
+            Bookingdate3.style.display = 'none';
+            Bookingdate4.style.display = 'none';
+
+            Time1.style.display = "none";
+            BookedOrnot1.style.display = "none";
+            Time3.style.display = "none";
+            BookedOrnot3.style.display = "none";
+            Time4.style.display = "none";
+            BookedOrnot4.style.display = "none";
+
+            document.querySelector(".cancel-btn2").classList.add("cancel-btn-visible");
+            document.querySelector(".cancel-btn1").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn3").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn4").classList.remove("cancel-btn-visible");
+        }
+
+        function bookingDay2() {
+            Time2.style.display = "flex";
+            BookedOrnot2.style.display = "flex";
+          
+            // document.querySelector(".today2").style.backgroundColor = "#4758d6";
+            
+        }
+        // for shadardpur fustal
+        Time3.style.display = "none";
+        BookedOrnot3.style.display = "none";
+        function booknow3() {
+            Bookingdate3.style.display = "flex";
+
+            
+            Bookingdate2.style.display = 'none';
+            Bookingdate1.style.display = 'none';
+            Bookingdate4.style.display = 'none';
+
+            Time1.style.display = "none";
+            BookedOrnot1.style.display = "none";
+            Time2.style.display = "none";
+            BookedOrnot2.style.display = "none";
+            Time4.style.display = "none";
+            BookedOrnot4.style.display = "none";
+
+            document.querySelector(".cancel-btn3").classList.add("cancel-btn-visible");
+            document.querySelector(".cancel-btn2").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn1").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn4").classList.remove("cancel-btn-visible");
+
+        }
+
+        function bookingDay3() {
+            Time3.style.display = "flex";
+            BookedOrnot3.style.display = "flex";
+            // document.querySelector(".today3").style.backgroundColor = "#4758d6";
+        }
+
+        //for parsa fustal
+        Time4.style.display = "none";
+        BookedOrnot4.style.display = "none";
+        function booknow4() {
+            Bookingdate4.style.display = "flex";
+
+            Bookingdate2.style.display = 'none';
+            Bookingdate3.style.display = 'none';
+            Bookingdate1.style.display = 'none';
+
+            Time1.style.display = "none";
+            BookedOrnot1.style.display = "none";
+            Time2.style.display = "none";
+            BookedOrnot2.style.display = "none";
+            Time3.style.display = "none";
+            BookedOrnot3.style.display = "none";
+
+            document.querySelector(".cancel-btn4").classList.add("cancel-btn-visible");
+            document.querySelector(".cancel-btn2").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn3").classList.remove("cancel-btn-visible");
+            document.querySelector(".cancel-btn1").classList.remove("cancel-btn-visible");
+
+        }
+
+        function bookingDay4() {
+            Time4.style.display = "flex";
+            BookedOrnot4.style.display = "flex";
+            // document.querySelector(".today4").style.backgroundColor = "#4758d6";
+        }
+
+
+        //    for Cancel Button
+        function cancel1() {
+            Time1.style.display = "none";
+            BookedOrnot1.style.display = "none";
+            Bookingdate1.style.display = 'none';
+            document.querySelector(".cancel-btn1").classList.remove("cancel-btn-visible");
+        }
+        function cancel2() {
+            Time2.style.display = "none";
+            BookedOrnot2.style.display = "none";
+            Bookingdate2.style.display = 'none';
+            document.querySelector(".cancel-btn2").classList.remove("cancel-btn-visible");
+        }
+        function cancel3() {
+            Time3.style.display = "none";
+            BookedOrnot3.style.display = "none";
+            Bookingdate3.style.display = 'none';
+            document.querySelector(".cancel-btn3").classList.remove("cancel-btn-visible");
+        }
+        function cancel4() {
+            Time4.style.display = "none";
+            BookedOrnot4.style.display = "none";
+            Bookingdate4.style.display = 'none';
+            document.querySelector(".cancel-btn4").classList.remove("cancel-btn-visible");
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

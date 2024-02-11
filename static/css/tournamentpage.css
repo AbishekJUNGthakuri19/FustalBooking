@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #4758d6;
+    --black: #201c1c;
+    --light-red: #ea3a3a;
+    --silver-white: #eeeded;
+    --orange: #e1811f;
+}
+
+body {
+    background: var(--silver-white);
+}
+
+.mybooking {
+    display: flex;
+    margin: 20px 25px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    margin-top: 12vh;
+}
+
+.line {
+    width: 3px;
+    height: 30px;
+    margin-right: 7px;
+    background-color: var(--light-red);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-side {
+    flex-basis: 25%;
+    position: sticky;
+    align-self: flex-start;
+    top: 70px;
+}
+
+.fustal-venue a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content; 
+}
+
+.fustal-venue a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.fustal-venue  h3{
+    margin-bottom: 30px;
+}
+.fustal-venue a:last-child{
+    color: #1876f2;
+}
+.right-side {
+    background: #fff;
+    top: 70px;
+    align-self: flex-start;
+    flex-basis: 25%;
+    position: sticky;
+    padding: 20px;
+    color: #626262;
+   
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.right-sidebar h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar-title a {
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+}
+
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+}
+
+.event p {
+    font-size: 12px;
+}
+
+.event a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.left-event span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--light-red);
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+}
+
+.sidebar-ads {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.post-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin-bottom:20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+}
+
+.user-profile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.post-text {
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.main-content{
+    flex-basis: 47%;
+}
+
+@media screen and (max-width:700px) {
+    .left-side{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    .main-content{
+        position: absolute;
+        margin-right: 20px;
+    }
+}

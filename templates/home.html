@@ -1,0 +1,282 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/tournamentpage.css' %}">
+<link rel="stylesheet" href="{% static 'css/shop.css' %}">
+
+<title>Bookmygame</title>
+<style>
+  .hero {
+    background-image: url("{% static 'img/first-section-image.jpg' %}");
+  }
+</style>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" class="scroll">
+      <a href="" class="nav-logo"><span>Book</span>mygame</a>
+      <input type="text" placeholder="search here" class="nav-search">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="{% url 'home' %}" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">BOOKINGS</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="" id="venues" class="nav-link">VENUES</a>
+            <div class="dropdown-content">
+              <a href="#">Bharatpur</a>
+              <a href="">Chitwan</a>
+              <a href="#">Kathmandu</a>
+              <a href="#">Lalitpur</a>
+              <a href="#">Bhaktapur</a>
+              <a href="#">Itahari</a>
+              <a href="#">Birgunj</a>
+              <a href="#">Pokhara</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'shop' %}" class="nav-link">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'tournamentpage' %}" class="nav-link">TOURNAMENT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="{% static 'img/user.jpg' %}" alt="" srcset="" class="nav-image"></a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+  </header>
+
+  {% block content %}
+  <section class="hero">
+    <div class="hero-bio">
+      <div class="hero-motto">
+        <h2><span>Book,</span> Play, Connect</h2>
+        <h2>Elevate your <span>futsal experience.</span></h2>
+      </div>
+      <div class="hero-booknow-btn">
+        <a href="" class="booknow"><button id="red-btn">Book now</button></a>
+      </div>
+      <div class="hero-loginregister-btn">
+        <a href="{% url 'signin' %}" class="login"><button id="black-btn">SignIn</button></a>
+        <a href="" class="register"><button id="white-btn">Register</button></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="second-section">
+    <h2>SHOP</h2>
+    <div class="second-section-shop-elements">
+      <div class="second-section-shop-elements-list">
+        <div class="products">
+          <div class="product-image">
+            <img src="{% static 'img/boots.png' %}" alt="" srcset="">
+          </div>
+          <div class="description">
+            <h4>Futsal Boots</h4>
+            <p>Rs.1200</p>
+            <div class="buttons">
+              <a href="#" type="button" class="addtocart-btn">Add to cart</a>
+              <a href="#" type="button" class="buynow-btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product-image">
+            <img src="{% static 'img/jersey1.png' %}" alt="" srcset="">
+          </div>
+          <div class="description">
+            <h4>Al nassr jersey</h4>
+            <p>Rs.1200</p>
+            <div class="buttons">
+              <a href="#" type="button" class="addtocart-btn">Add to cart</a>
+              <a href="#" type="button" class="buynow-btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product-image">
+            <img src="{% static 'img/socks.png'%}" alt="" srcset="">
+          </div>
+          <div class="description">
+            <h4>Long bretheable socks</h4>
+            <p>Rs.1200</p>
+            <div class="buttons">
+              <a href="#" type="button" class="addtocart-btn">Add to cart</a>
+              <a href="#" type="button" class="buynow-btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product-image">
+            <img src="{% static 'img/gloves.png' %}" alt="" srcset="">
+          </div>
+          <div class="description">
+            <h4>Keeper gloves spongy</h4>
+            <p>Rs.1200</p>
+            <div class="buttons">
+              <a href="#" type="button" class="addtocart-btn">Add to cart</a>
+              <a href="#" type="button" class="buynow-btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="viewmore-btn-cont">
+        <a href="html/Shop.html" type="button" class="viewmore-btn"> View more</a>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- end of second section -->
+
+
+  <!-- THIRD SECTION -->
+
+  <div id="third-section">
+    <h2>REVIEWS</h2>
+    <div class="third-section-review-cont">
+      <div class="reviews">
+        <div class="profile-image">
+          <img src="{% static 'img/neymar.jpeg'%}" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h4>Neymar Junior</h4>
+          <p>Football player</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star" style="color: lightgrey;"></i>
+          </div>
+          <p>One of the best futsal booking platform, i have come across. The app is easy to use and the user iterface
+            is also clean and engaging. Overall i loved it.</p>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="profile-image">
+          <img src="{% static 'img/ronaldo.jpeg' %}" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h4>Neymar Junior</h4>
+          <p>Football player</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star" style="color: lightgrey;"></i>
+          </div>
+          <p>One of the best futsal booking platform, i have come across. The app is easy to use and the user iterface
+            is also clean and engaging. Overall i loved it.</p>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="profile-image">
+          <img src="{% static 'img/ozil.jpeg' %}" alt="" srcset="">
+        </div>
+        <div class="description">
+          <h4>Neymar Junior</h4>
+          <p>Football player</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star" style="color: lightgrey;"></i>
+          </div>
+          <p>One of the best futsal booking platform, i have come across. The app is easy to use and the user iterface
+            is also clean and engaging. Overall i loved it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- END OF THIRD SECTION -->
+
+  <!-- FOURTH SECTION -->
+
+  <div id="fourth-section">
+    <div class="fourth-section-cont">
+      <div class="fourth-left-section">
+        <h1>HAVE ANY </h1>
+        <h1>QUESTIONS ? </h1>
+        <p>Please be politie and follow the moral ethics white arising any question. Remember, the question must be
+          related and about the context and aswerable as well.</p>
+      </div>
+      <div class="fourth-right-section">
+        <div class="fourth-right-section-firstrow">
+          <input type="text" placeholder="firstname">
+          <input type="text" placeholder="lastname">
+        </div>
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Type your question here">
+        <div class="fourth-right-section-btn">
+          <a href="#" type="button">SUBMIT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF FOURTH SECTION -->
+  {% endblock %}
+
+
+  <!-- FIFTH SECTION (FOOTER SECTION) -->
+  <div id="footer-section">
+    <div class="footer-section-cont">
+      <div class="logo-section">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="option-section">
+        <a href="">About us</a>
+        <a href="">Terms of service</a>
+        <a href="">Refund policy</a>
+      </div>
+      <div class="description">
+        <p>Book my game is a game booking platform.It was founded in 2023, july 14th. The motive of the platform is to
+          provide a user-friendlt interface and make the process of booking futsal games hassel free.</p>
+      </div>
+      <div class="contact">
+        <i class="fa-solid fa-phone"></i>
+        <p>+977 9812345678</p>
+        <i class="fa-solid fa-envelope"></i>
+        <p>bookmygame@gmail.com</p>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Bharatpur, Chitwan</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<script src="{% static 'js/homepage.js' %}"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
+
+</html>

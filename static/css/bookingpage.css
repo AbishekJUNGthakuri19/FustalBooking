@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #4758d6;
+    --black: #201c1c;
+    --light-red:#ea3a3a;
+    --silver-white:#eeeded;
+    --orange:#e1811f;
+}
+.container{
+    padding-top: 10vh;
+}
+.city-name{
+    display: flex;
+    margin: 20px 25px;
+}
+.line{
+    margin-right: 7px;
+    width: 3px;
+    height: 30px;
+    
+    background-color: var(--light-red);
+}
+.fustal-box1,.fustal-box2,.fustal-box3,.fustal-box4{
+    background-color: var(--silver-white);
+    margin-top: 15px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fustal-venuePic{
+    width: 100px;
+    height: 100px;
+    margin:10px 10px 10px 25px;
+    border-radius: 5px;
+}
+
+.box-left{
+    display: flex;
+}
+
+.name-rating{
+    margin:20px 20px 20px 0px;
+}
+.star{
+    color: #ff9c1a;
+    margin: 10px 0px;
+}
+.star i:nth-child(5){
+    color: rgb(175, 175, 175);
+}
+.fustal-box1 .star i:nth-child(4),.fustal-box3 .star i:nth-child(4){
+    color: rgb(175, 175, 175);
+} 
+
+.dir-call-btn{
+    margin: 30px;
+    padding: 8px 15px 5px 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.dir-call-btn:hover{
+    background-color: var(--blue);
+    color: white;
+}
+.dir-call-btn img{
+    width: 20px;
+    height: 20px;  
+    margin-right: 5px;
+} 
+
+.cancel-btn1,.cancel-btn2,.cancel-btn3,.cancel-btn4{
+    margin: 30px;
+    padding: 8px 15px 5px 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    visibility: hidden;
+}
+.cancel-btn1:hover ,.cancel-btn2:hover,.cancel-btn3:hover,.cancel-btn4:hover{
+background-color: var(--blue);
+color: white;
+} 
+.cancel-btn-visible{
+    visibility: visible;
+}
+.cancel-btn img{
+    width: 20px;
+    height: 20px;  
+    margin-right: 5px;
+} 
+
+
+.book-btn{
+    padding: 8px 35px;
+    border-radius: 5px;
+    margin: 30px;
+    outline: none;
+    border-style: none;
+    background-color: var(--light-red);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.book-btn:hover{
+    background-color: var(--blue);
+}
+
+.time1 a,.time2 a,.time3 a,.time4 a{
+    margin: 20px 0px 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    color: red;
+    border: 2px solid rgb(95, 94, 94);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.time2 a:nth-child(2),.time2 a:nth-child(4),.time2 a:nth-child(5),.time2 a:nth-child(8){
+    color: white;
+    background-color: green;
+}
+.time1 a:nth-child(1),.time1 a:nth-child(3),.time1 a:nth-child(4),.time1 a:nth-child(7){
+    color: white;
+    background-color: green;
+}
+.time3 a:nth-child(4),.time3 a:nth-child(5),.time3 a:nth-child(6),.time3 a:nth-child(7),.time3 a:nth-child(1){
+    color: white;
+    background-color: green;
+}
+.time4 a:nth-child(odd){
+    color: white;
+    background-color: green;
+}
+.booked,.not-booked{
+    display: flex;
+    text-align: center;
+    margin:5px 30px 30px 25px;
+}
+.booked .circle{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.not-booked .circle{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.date-booking1,.date-booking2,.date-booking3,.date-booking4{
+    /* display: flex; */
+    gap: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: center;
+  
+}
+.date-booking1 p,.date-booking2 p,.date-booking3 p,.date-booking4 p{
+    /* border: 2px solid black; */
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    /* background:linear-gradient(100deg, red, blue); */
+    background-color: var(--light-red);
+}
+
+.date-booking1 p:hover{
+    background-color: #4758d6;
+}
+.date-booking2 p:hover{
+    background-color: #4758d6;
+}
+.date-booking3 p:hover{
+    background-color: #4758d6;
+}
+.date-booking4 p:hover{
+    background-color: #4758d6;
+}
+
+@media (max-width: 768px) {
+    .fustal-venuePic{
+        margin-left: 10px;
+    }
+    .fustal-location,.venue-name,.star{
+        margin-right: 7px;
+    }
+    .box{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .fustal-venuePic {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .box-left,
+    .box-right {
+        text-align: center;
+    }
+    
+    .name-rating {
+        margin: 10px 0;
+    }
+
+    .dir-call-btn,
+    .book-btn {
+        display:block;
+        width: 100%;
+        max-width: 150px;  
+    }
+ 
+    .cancel-btn1,.cancel-btn2,.cancel-btn3,.cancel-btn4 {
+        display: block;
+        width: 100%;
+        max-width: 150px; 
+    }
+   
+ 
+    .time1,.time2,.time3,.time4{
+        overflow-x: scroll;
+     }
+    .date-booking1, .date-booking2, .date-booking3,.date-booking4{
+        font-size: 80%;
+        overflow-x: scroll;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }   
+    
+}
