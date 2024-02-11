@@ -32,8 +32,24 @@ def signin(request):
             
     return render(request, 'signIn.html', {'error_message':error_message})
 
+
+
 def logIn(request):
-    return render(request, 'loginpage.html')
+    error_message = None
+
+    if request.method == 'POST':
+        username = request.POST['username']
+        pass1 = request.POST['password']
+
+        user = authenticate(request, username = username, password = pass1)
+
+        if user is not None:
+             login(request,user)
+             return redirect('shop')
+        else:
+            error_message = 'Your username or password is incorrect'
+
+    return render(request, 'loginpage.html', {'error_message':error_message})
 
 
 def shopPage(request):
