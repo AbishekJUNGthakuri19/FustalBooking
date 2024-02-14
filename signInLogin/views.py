@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 def homePage(request):
     return render(request, 'home.html')
 
+
 def signin(request):
     error_message = None
 
@@ -20,11 +21,8 @@ def signin(request):
             error_message = "Your password and confirm password is not same"
         
         else:
-            if User.objects.filter(username = uname).exists():
-                error_message = 'Name has already taken!!'
-            
-            elif User.objects.filter(email = email).exists():
-                error_message = 'Email has already taken!!'
+            if User.objects.filter(username = uname).exists() or  User.objects.filter(email = email).exists():
+                error_message = 'Username or email has already taken!!'
             else:
                 myuser = User.objects.create_user(uname,email,pass1)
                 myuser.save()
@@ -50,7 +48,6 @@ def logIn(request):
             error_message = 'Your username or password is incorrect'
 
     return render(request, 'loginpage.html', {'error_message':error_message})
-
 
 def shopPage(request):
     return render(request, 'Shop.html')
